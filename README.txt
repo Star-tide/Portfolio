@@ -9,9 +9,6 @@ Credits:
 
 	Template Design: aj@lkn.io | @ajlkn html5 up
 
-	Demo Images:
-		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
 
