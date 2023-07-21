@@ -1,0 +1,206 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    background-color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#wrapper {
+    height: 95vh;
+    width: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+#container {
+  flex-wrap: wrap;
+  align-items: center;
+  height: 90vh;
+  width: 90vh;
+  background-color: #afd275;
+  /*box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);*/
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  box-shadow: 
+  12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+  -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+
+
+}
+
+  #myInput {
+    margin-top: none;
+    border-radius: 25px;
+    color: #fff;
+  }
+
+  h2 {
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: #555;
+    margin-bottom: none;
+  }
+
+  /* Style the header */
+  .header {
+    background-color: rgb(93, 93, 93);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    height: 20%;
+    width: 80%;
+  }
+
+  ::-webkit-scrollbar{height: 50%; width: 50%;}
+
+  .main {
+    background-color: rgb(93, 93, 93); 
+    width: 82%;
+    height: 70%;
+    overflow: scroll;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #myUL {
+    padding: 0;
+    background-color: rgb(93, 93, 93);
+    box-shadow: 5px black;
+  }
+
+  ul {
+    width: 600px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(114, 114, 114);
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 50px 50px 50px 50px;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: rgb(86, 86, 86);
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0px 50px 50px 0px;
+    padding: 12px 16px 12px 16px;
+    background-color: rgb(171, 171, 171);
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border-radius: 50px;
+    margin-top: 5px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
